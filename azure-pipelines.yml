@@ -21,13 +21,23 @@ steps:
   inputs:
     restoreSolution: '$(solution)'
 
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: 'SonarQubeServer'
+    scannerMode: 'MSBuild'
+    projectKey: 'SonarQubeDemo-dotnet'
+    projectName: 'SonarQubeDemo-dotnet'
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
+- task: SonarQubeAnalyze@4
+- task: sonar-buildbreaker@8
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    SonarQube: 'SonarQubeServer'
+
+- task: SonarQubePublish@4
+  inputs:
+    pollingTimeoutSec: '300'
