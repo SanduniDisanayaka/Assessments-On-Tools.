@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
             
         {   //Create Your Connection
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-33MU7I7\\MYMSSQLSERVER;Initial Catalog=Time_Table_Management_System;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
            
             {
                 try
@@ -88,7 +88,7 @@ namespace WindowsFormsApp1
         {
 
             //Create Your Connection
-            con = new SqlConnection("Data Source=DESKTOP-33MU7I7\\MYMSSQLSERVER;Initial Catalog=Time_Table_Management_System;Integrated Security=True;");
+            con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
            
             loadTable();
         }
@@ -138,7 +138,7 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {   //Create Your Connection
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-33MU7I7\\MYMSSQLSERVER;Initial Catalog=Time_Table_Management_System;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
 
             {
                 try
@@ -162,7 +162,7 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {   //Create Your Connection
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-33MU7I7\\MYMSSQLSERVER;Initial Catalog=Time_Table_Management_System;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
 
             {
                 try
@@ -184,7 +184,7 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {   //Create Your Connection
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-33MU7I7\\MYMSSQLSERVER;Initial Catalog=Time_Table_Management_System;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
 
             {
                 try
@@ -218,7 +218,7 @@ namespace WindowsFormsApp1
 
         private void button5_Click(object sender, EventArgs e)
         {   //Create Your Connection
-            SqlConnection con = new SqlConnection("Data Source=DESKTOP-33MU7I7\\MYMSSQLSERVER;Initial Catalog=Time_Table_Management_System;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
 
 
             if (Search.Text != "")
