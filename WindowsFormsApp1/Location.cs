@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
             con = new SqlConnection("Server = tcp:sqlserverml12345.database.windows.net,1433; Initial Catalog = Time_Table_Management_System; Persist Security Info = False; User ID = Millennium; Password = Malinda@12345; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;");
         }
         //ccc
+        //bbb
         private void Location_Load(object sender, EventArgs e)
         {
            
